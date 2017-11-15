@@ -1,0 +1,25 @@
+#banner
+	opacity 0
+	transition opacity .3s ease-in-out
+
+.hideAndShow, #banner.hideAndShow
+	opacity 1
+	transform translate(0, 0)
+	transition all .3s ease-in-out
+
+	&.moveFast
+		transition-duration .15s
+
+	&.hideDown
+		opacity 0 !important
+		transform translate(0, 50px)
+
+	&.hideUp
+		opacity 0 !important
+		transform translate(0, -50px)
+
+a
+	transition color .3s ease-in-out
+
+footer
+	transform translate(0, 0) !important
